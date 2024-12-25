@@ -1,0 +1,26 @@
+.qr-code-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .qr-code-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .qr-code-container p {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
+  .qr-code-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .qr-code-container a:hover {
+    text-decoration: underline;
+  }
+
+  .error{
+    color: red;
+  }

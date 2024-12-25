@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import LatLong from './components/LatLong/latLong';
+import AddCommunity from './components/Sidebar/addCommunity';
+import Dashboard from './components/Sidebar/dashboard';
+import ManageCommunity from './components/Sidebar/manageCommunity';
+import Reports from './components/Sidebar/Reports';
+import Sidebar from './components/Sidebar/Sidebar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className='App'>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Sidebar />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/communities" element={<ManageCommunity />} />
+        <Route path="/reports" element={<Reports />} />
+        <Route path="/dashboard/addCommunity" element={<AddCommunity />} />
+        <Route path="/location" element={<LatLong />} />
+      </Routes>
+    </Router>
+   </div>
   );
 }
 

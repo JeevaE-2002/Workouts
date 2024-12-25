@@ -1,0 +1,143 @@
+/* Default Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #FFFFFF;
+    color: #797979;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transition: transform 0.2s ease, width 0.2s ease;  */
+    z-index: 1000;
+    width: 270px;
+  }
+  
+  /* Sidebar for Mobile (Hidden by Default) */
+  .sidebar.hide {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.show {
+    transform: translateX(0);
+    width: 200px;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 5rem 0 0 0;
+    width: 100%;
+  }
+  
+  .iconclass{
+    padding-right: 10px;
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+  }
+  
+  .menu li:hover {
+    background: linear-gradient(90deg, #33BB78 0%, #73ADE3 100%);
+    color: white;
+    font-weight: 600;
+  }
+  
+  
+  .menu li.active {
+    /* background: linear-gradient(90deg, #33BB78 0%, #73ADE3 100%); */
+    background-color:red ;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .menu li span {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Toggle Button (Mobile Only) */
+  .toggle-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    z-index: 1012;
+    display: flex;
+    background: #ffffff;
+    width: 100%;
+    height: 55px;
+  }
+  
+  .toggle-btn .toggleicon {
+    position: absolute;
+    margin-left: 150px;
+    top: 1rem;
+    left: 1.5rem;
+  }
+  
+  .fabars{
+    position: absolute;
+    top: 1rem !important;
+    left: 1.5rem !important;
+  }
+  
+  /* Overlay for Sidebar (Mobile Only) */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 900;
+  }
+  
+  .sidebar-link {
+    text-decoration: none;
+    color: rgba(121, 121, 121, 1);
+    width: 100%;
+    display: block;
+  }
+  
+  .fatimes{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+  }
+  
+  
+  @media(min-width:769px){
+    .fatimes{
+      display: none;
+    }
+  }
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 220px !important;
+      align-items: flex-start;
+    }
+    .menu{
+      margin-top: 50px !important;
+      font-size: 13px;
+    }
+    .menu li span {
+      display: none;
+    }
+  
+    .sidebar.show .menu li span {
+      display: inline;
+    }
+  }
+  
+  

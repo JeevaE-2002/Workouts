@@ -1,0 +1,37 @@
+.scroll-wrapper {
+    overflow: hidden;
+    width:70%;
+    height: 150px;
+    position: relative;
+    background-color: #f4f4f4;
+    margin-left: 20vh;
+  }
+  
+  .scroll-container {
+    display: flex;
+    white-space: nowrap;
+    transition: transform 0.1s linear; /* Smooth scroll effect */
+  }
+  
+  .scroll-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 150px;
+    background-color: #ccc;
+    color: #333;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .scroll-item:first-child {
+    margin-left: 0;
+  }
+  
+  .scroll-item:last-child {
+    margin-right: 0;
+  }
+  

@@ -1,0 +1,33 @@
+/* decor.css */
+
+.decor-main {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .typing-effect {
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s step-end infinite; 
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-right-color: transparent;
+    }
+    50% {
+      border-right-color: #333;
+    }
+  }
+
+  
