@@ -1,0 +1,184 @@
+.add-city-container{
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.add-city-icon{
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    width: max-content;
+    margin-left: 5px;
+    border:none !important;
+}
+.add-city-icon p{
+    padding-left: 5px;
+}
+.add-city-icon i{
+    padding-top: 18px;
+}
+.cityAdmin-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    background-color: rgb(214, 201, 201);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.cityAdmin-form p{
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.error-cityAdmin{
+    position: absolute;
+    color: red;
+    margin-top: -15px;
+    font-size: 12px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.error-cityAdmin-ph{
+    margin-top: 0 !important;
+    padding-top: 5px !important;
+}
+.cityAdmin-form span{
+    color:red;
+}
+
+.add-cityAdmin-field .MuiOutlinedInput-root {
+    border: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.3s;
+    width:400px;
+    height: 48px;
+    background-color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 6px 16px 6px 16px;
+    margin: 5px 20px 20px 20px;
+}
+
+.add-cityAdmin-field .MuiOutlinedInput-root:hover {
+    border: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.add-cityAdmin-field .MuiOutlinedInput-root.Mui-focused {
+    border-bottom: 2px solid greenyellow; 
+    box-shadow: none;
+}
+
+.add-cityAdmin-field .MuiOutlinedInput-notchedOutline {
+    border: none; 
+}
+
+.add-cityAdmin-field .MuiOutlinedInput-root.Mui-disabled {
+    background-color:white;
+}
+
+/* Phone Input */
+.city-ph{
+    margin-bottom: 5px;
+}
+.react-tel-input{
+    margin-left: 20px;
+}
+
+
+.add-cityAdmin-phone{
+    border: none !important;
+    border-bottom: 2px solid transparent !important; 
+    transition: border-color 0.3s;
+    width:400px !important;
+    height: 48px !important;
+    background-color: white !important;
+}
+.add-cityAdmin-phone:focus{
+    border-bottom: 2px solid greenyellow !important;  
+}
+
+.react-tel-input .flag-dropdown{
+    border: none !important;
+    background-color: white !important;
+    border-bottom: 2px solid transparent !important; 
+}
+.react-tel-input .flag-dropdown .selected-flag:hover,
+.react-tel-input .flag-dropdown.open .selected-flag{
+    background-color: white !important;
+}
+
+
+
+/* AutoComplete */
+
+.add-cityAdmin-down .MuiOutlinedInput-root{
+    border: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.3s;
+    width:400px;
+    height: 48px !important;
+    background-color:white;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 6px 16px 6px 16px;
+    margin: 5px 20px 20px 20px;
+}
+
+.add-cityAdmin-down .MuiAutocomplete-root:hover {
+    border-bottom: 2px solid transparent;
+    border: transparent; 
+}
+
+.add-cityAdmin-down .MuiOutlinedInput-root.Mui-focused {
+    border-bottom: 2px solid greenyellow; 
+    box-shadow: none;
+}
+
+.add-cityAdmin-down .MuiOutlinedInput-notchedOutline {
+    border: none; 
+}
+
+.add-cityAdmin-down .MuiAutocomplete-inputRoot {
+    height: 36px;
+}
+
+.add-cityAdmin-down .MuiOutlinedInput-root.Mui-disabled {
+    background-color: white;
+}
+
+.add-city-container-btn{
+    float: right;
+    margin-bottom: 30px;
+}
+.add-city-container-btn button{
+    height: 40px;
+    width: 190px;
+    font-weight: 700;
+    border-radius: 50px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-city-submit{
+    background: hotpink;
+    color: var(--bg-color-1);
+    border: none;
+    box-shadow: 8px 8px 20px 0px var(--box-shadow-3);
+}
+
+.add-city-cancel{
+    background-color: hotpink;
+    color: var(--entries-info);
+    border: 2px solid var(--input-border-bottom-2);
+}
+
+/* X hide */
+
+.add-city-co .css-120dh41-MuiSvgIcon-root{
+    /* display: none !important; */
+}

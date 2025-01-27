@@ -8,6 +8,8 @@ import Sidebar from './components/Sidebar/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Form from './components/Form/Form';
 import DropdownExample from './components/Dropdown/Dropdown';
+import AddCityAdmin from './components/Sample/Sammple';
+import Profile from './components/Profile/profile';
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
         <Route path="/dashboard/addCommunity" element={<AddCommunity />} />
         <Route path="/location" element={<LatLong />} />
         <Route path="/form" element={<Form />} />
-        <Route path="/dropdown" element={<DropdownExample />} />
+        <Route path="/city" element={<AddCityAdmin />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
    </div>

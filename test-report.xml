@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="F:\Studies\sampleone\src\test\login.test.js">
-    <testCase name="Login Component renders Login form elements" duration="60"/>
-    <testCase name="Login Component updates email and password input fields" duration="25"/>
-    <testCase name="Login Component displays &apos;Loading...!&apos; message on submit" duration="15"/>
-    <testCase name="Login Component displays &apos;Successfully Submitted&apos; for correct credentials" duration="15"/>
-    <testCase name="Login Component displays &apos;Invalid Credentials&apos; for incorrect credentials" duration="2056"/>
   </file>
 </testExecutions>
